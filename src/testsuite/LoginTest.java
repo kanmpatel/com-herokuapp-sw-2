@@ -47,8 +47,7 @@ public class LoginTest extends BaseTest {
         WebElement login = driver.findElement(By.xpath("//button[@class='radius']"));
         login.click();
         //this os form requirement
-        String expectedErrorMessage = "Your username is invalid!\n" +
-                "×";
+        String expectedErrorMessage = "Your username is invalid!";
         //find the welcome text element and get the text
         WebElement actualErrorMessageElements = driver.findElement(By.cssSelector("div#flash"));
         String actualErrorMessage = actualErrorMessageElements.getText();
@@ -68,8 +67,7 @@ public class LoginTest extends BaseTest {
         WebElement login = driver.findElement(By.xpath("//button[@class='radius']"));
         login.click();
         //this os form requirement
-        String expectedErrorMessage = "Your password is invalid!\n" +
-                "×";
+        String expectedErrorMessage = "Your password is invalid!";
         //find the welcome text element and get the text
         WebElement actualErrorMessageElements = driver.findElement(By.cssSelector("div#flash"));
         String actualErrorMessage = actualErrorMessageElements.getText();
